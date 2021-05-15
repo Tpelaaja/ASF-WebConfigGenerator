@@ -53,9 +53,6 @@
 
         document.body.removeChild(element);
       },
-      toggleAdvanced() {
-        this.displayAdvanced = !this.displayAdvanced;
-      },
       validateForm() {
         const form = document.getElementsByTagName('form')[0];
 

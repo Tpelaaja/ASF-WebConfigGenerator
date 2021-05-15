@@ -73,46 +73,19 @@ export default {
 
         return err;
     },
-    steamid(value, schema) {
+    token(value, schema) {
         const emptyError = checkEmpty(value, schema.required);
         if (!isNil(emptyError)) return emptyError;
 
         const err = [];
-
-        const re = /^[1-9][0-9]{16}$/;
-        if (!re.test(value)) err.push('This is not a valid steamid!');
 
         return err;
     },
-    masterClan(value, schema) {
+    wallet(value, schema) {
         const emptyError = checkEmpty(value, schema.required);
         if (!isNil(emptyError)) return emptyError;
 
         const err = [];
-
-        const re = /^[1-9][0-9]{17}$/;
-        if (!re.test(value)) err.push('This is not a valid clan id!');
-
-        return err;
-    },
-    parentalPIN(value, schema) {
-        const emptyError = checkEmpty(value, schema.required);
-        if (!isNil(emptyError)) return emptyError;
-
-        const err = [];
-
-        if (!isString(value)) {
-            err.push('Not a valid string!');
-        } else {
-            if (value.length > 4) err.push('Text too long!');
-            else if (value.length < 4) err.push('Text too short!');
-        }
-
-        value = parseInt(value, 10);
-
-        if (!isNumber(value) || isNaN(value)) {
-            err.push('Not a valid number!');
-        }
 
         return err;
     },

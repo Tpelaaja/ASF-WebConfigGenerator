@@ -11,14 +11,9 @@ export default new Router({
             component: () => import('./components/Home.vue')
         },
         {
-            path: '/asf',
-            name: 'asf-config',
-            component: () => import('./components/ASFConfig.vue')
-        },
-        {
-            path: '/bot',
-            name: 'bot-config',
-            component: () => import('./components/BotConfig.vue')
+            path: '/configurator',
+            name: 'cli',
+            component: () => import('./components/Generator.vue')
         }
     ]
 });
