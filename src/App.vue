@@ -2,14 +2,14 @@
     <div id="app">
         <div class="head">
             <a href="#" class="logo">
-                <img src="./assets/logo.png" alt="logo">
+                <img src="./assets/logo.png" alt="asf logo">
             </a>
             <h1 class="text-center" v-html="$t('app.name')"></h1>
         </div>
         <div class="menu">
             <ul>
                 <li><router-link :to="{ name: 'home' }" active-class="active" v-html="$t('link.home')" exact></router-link></li>
-                <li><router-link :to="{ name: 'cli' }" active-class="active" v-html="$t('link.cli')"></router-link></li>
+                <li><router-link :to="{ name: 'cliplus' }" active-class="active" v-html="$t('link.cli')"></router-link></li>
             </ul>
         </div>
 

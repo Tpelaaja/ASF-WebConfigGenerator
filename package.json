@@ -1,8 +1,8 @@
 {
-  "name": "cliplusconfig",
+  "name": "asf-config-web",
   "version": "1.0.0",
-  "description": "Configure Salad CLI+ Easily",
-  "author": "3oF",
+  "description": "ASF config webpage",
+  "author": "Arkadiusz 'Mole' Sygulski <arkadiusz@sygulski.pl>",
   "private": true,
   "scripts": {
     "build": "webpack",

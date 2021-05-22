@@ -1,9 +1,10 @@
 {
     "app.name": "Salad CLI+ Config Generator",
     "button.download": "Download",
-    "home.topic": "Welcome to the Config Generator. This app is an quick tool to save you from making your own config.json file. Hope you enjoy and have fun!",
+    "home.topic": "The CLI+ Configurator was made to configure the CLI+ application easily on the internet without having to touch the config.json. <br><br><b>Support the Configurator!</b><br> If you want to support us consider these links <br><br><a href=https://fanatical.com/referrals/?refer_a_friend=NWZkODkwYmZiZjg3MTIwMDdkYjRiYmY5>At Fanatical.com</a><br><a href=https://https://www.g2a.com/n/cliplus>At G2A</a><br>On Salad.io by using the referral code: 2JWUZD!<br><br><b>This application is an fork off <a href=https://github.com/JustArchiNET/ASF-WebConfigGenerator>ASF-WebconfigGenerator</a> to check the fork please go <a href=https://github.com/Tpelaaja/SaladCLIPlus-WebConfigGenerator>here</a></b>",
     "link.cli": "Configurator",
     "link.home": "Home",
-    "schema.generic.token": "Your Salad.io login code",
-    "schema.generic.wallet": "Your NiceHash Wallet & RigID"
+    "schema.auth": "We the developers of CLI+ or this web configurator can not see your token. The token is used to get basic information to the app.",
+    "schema.nicehash": "Enter your Nicehash wallet and rig id like this: wallet.rigid",
+    "schema.ethermine": "Enter your Ethermine wallet and rig id like this: wallet.rigid"
 }

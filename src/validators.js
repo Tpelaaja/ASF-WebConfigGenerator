@@ -73,11 +73,13 @@ export default {
 
         return err;
     },
-    token(value, schema) {
+    auth(value, schema) {
         const emptyError = checkEmpty(value, schema.required);
         if (!isNil(emptyError)) return emptyError;
 
         const err = [];
+
+        if (!isString(value)) err.push('This is not a valid authentication code!');
 
         return err;
     },
@@ -86,6 +88,8 @@ export default {
         if (!isNil(emptyError)) return emptyError;
 
         const err = [];
+
+        if (!isString(value)) err.push('This is not a valid wallet code!');
 
         return err;
     },

@@ -11,9 +11,9 @@ export default new Router({
             component: () => import('./components/Home.vue')
         },
         {
-            path: '/configurator',
-            name: 'cli',
-            component: () => import('./components/Generator.vue')
+            path: '/asf',
+            name: 'cliplus',
+            component: () => import('./components/cli.vue')
         }
     ]
 });

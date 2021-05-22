@@ -1,52 +1,60 @@
 import Validators from './validators';
 
 export default {
-    'V6.0': {
+    'V7': {
         cli: [
             {
                 fields: [
                     {
-                        label: 'Salad.io Token',
-                        field: 's_token',
+                        label: 'Your salad.io authenentication token',
+                        field: 'salad_key',
                         placeholder: '0',
                         type: 'InputText',
-                        description: 'schema.generic.token',
-                        validator: Validators.token
+                        description: 'schema.auth',
+                        validator: Validators.auth
                     },
                     {
-                        label: 'NiceHash Wallet & RigID',
-                        field: 's_wallet',
-                        placeholder: '0',
+                        label: 'Your Nicehash wallet & rigid',
+                        field: 'nicehash_wallet',
+                        placeholder: '3FSqW1MFAdzekG6DdvfUhPVnwVY4C9zBAG.ylpbzea9ddajcmp',
                         type: 'InputText',
-                        description: 'schema.generic.wallet',
+                        description: 'schema.nicehash',
+                        validator: Validators.wallet
+                    },
+                    {
+                        label: 'Your Ethermine wallet & rigid',
+                        field: 'ethermine_wallet',
+                        placeholder: '0x6ff85749ffac2d3a36efa2bc916305433fa93731.ylpbzea9ddajcmp',
+                        type: 'InputText',
+                        description: 'schema.ethermine',
                         validator: Validators.wallet
                     },
                 ]
             }
         ]
     },
-    'V5.0': {
+    'V5/V6': {
         cli: [
             {
                 fields: [
                     {
-                        label: 'Salad.io Token',
-                        field: 's_token',
+                        label: 'Your salad.io authenentication token',
+                        field: 'salad_key',
                         placeholder: '0',
                         type: 'InputText',
-                        description: 'schema.generic.token',
-                        validator: Validators.token
+                        description: 'schema.auth',
+                        validator: Validators.auth
                     },
                     {
-                        label: 'NiceHash Wallet & RigID',
-                        field: 's_wallet',
-                        placeholder: '0',
+                        label: 'Your Nicehash wallet & rigid',
+                        field: 'wallet',
+                        placeholder: '3FSqW1MFAdzekG6DdvfUhPVnwVY4C9zBAG.ylpbzea9ddajcmp',
                         type: 'InputText',
-                        description: 'schema.generic.wallet',
+                        description: 'schema.nicehash',
                         validator: Validators.wallet
                     },
                 ]
-            },
-        ],
-    },
-};
+            }
+        ]
+    }
+}
