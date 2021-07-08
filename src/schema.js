@@ -1,7 +1,7 @@
 import Validators from './validators';
 
 export default {
-    'V7': {
+    'V7, V8 & V9': {
         cli: [
             {
                 fields: [
@@ -33,7 +33,7 @@ export default {
             }
         ]
     },
-    'V7 - Only Mining': {
+    'V7, V8 & V9 - Only Mining': {
         cli: [
             {
                 fields: [
